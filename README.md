@@ -11,17 +11,11 @@ O objetivo deste projeto é fornecer um material didático e reprodutível que i
 O repositório está organizado da seguinte forma:
 
 ```text
-├── notebooks/
-│   ├── 01_mlp_grokking.ipynb              # Treinamento do MLP na tarefa de Aritmética Modular (a + b mod p)
-│   ├── 02_transformer_grokking.ipynb      # Treinamento do mini-Transformer na Aritmética Modular (a + b mod p)
-│   ├── 03_sparse_parity.ipynb             # MLP no problema da Paridade Esparsa (Sparse Parity) com ruído
-│   ├── 04_sparse_parity_transformer.ipynb # Transformer no problema da Paridade Esparsa (Sparse Parity)
-│   └── 05_modular_energy_conservation.ipynb# MLP e Transformer na Conservação de Energia Modular (x² + y² mod p)
-├── paper/
-│   ├── artigo_grokking.tex                # Arquivo fonte do artigo em LaTeX
-│   ├── artigo_grokking.md                 # Arquivo fonte do artigo em Markdown
-│   ├── artigo_grokking.pdf                # Artigo completo compilado em formato PDF
-│   └── *.png                              # Gráficos e visualizações geradas pelas simulações
+├── 01_mlp_grokking.ipynb              # Treinamento do MLP na tarefa de Aritmética Modular (a + b mod p)
+├── 02_transformer_grokking.ipynb      # Treinamento do mini-Transformer na Aritmética Modular (a + b mod p)
+├── 03_sparse_parity.ipynb             # MLP no problema da Paridade Esparsa (Sparse Parity) com ruído
+├── 04_sparse_parity_transformer.ipynb # Transformer no problema da Paridade Esparsa (Sparse Parity)
+├── 05_modular_energy_conservation.ipynb# MLP e Transformer na Conservação de Energia Modular (x² + y² mod p)
 ├── requirements.txt                       # Dependências do Python
 └── README.md                              # Este arquivo de documentação
 ```
@@ -60,7 +54,7 @@ pip install -r requirements.txt
 ```bash
 jupyter notebook
 ```
-Uma janela do navegador será aberta. Navegue até a pasta `notebooks/` e execute os experimentos passo a passo. Todos os notebooks foram desenvolvidos para rodar rapidamente em CPU convencional, levando poucos minutos para atingir a convergência e gerar os gráficos.
+Uma janela do navegador será aberta. Navegue até a pasta corrente e execute os experimentos passo a passo. Todos os notebooks foram desenvolvidos para rodar rapidamente em CPU convencional, levando poucos minutos para atingir a convergência e gerar os gráficos.
 
 ---
 
@@ -73,27 +67,6 @@ Uma janela do navegador será aberta. Navegue até a pasta `notebooks/` e execut
 *   **Transição de Fase Dinâmica:** Demonstração visual de como a acurácia de validação atua como um *parâmetro de ordem* que transiciona abruptamente de um estado de memorização desordenado (alta entropia e volume de parâmetros) para um estado generalizador ordenado (baixa energia/norma $L_2$).
 *   **Cristalização Trigonométrica (Análise de Fourier):** Análise espectral de Fourier sobre os pesos da camada de *embedding* mostrando que o modelo aprende a aritmética modular ao alinhar periodicamente seus pesos na forma de senos e cossenos (invariância translacional no grupo cíclico $C_p$).
 *   **Órbitas e Degenerescência no Espaço Latente:** Visualização em 2D (via PCA) do colapso de estados degenerados de energia (pares $x$ e $p-x$) e da auto-organização dos resíduos quadráticos em órbitas circulares concêntricas concêntricas sob o efeito do decaimento de pesos.
-
----
-
-## 📄 O Artigo Científico
-
-O manuscrito completo do artigo está disponível na pasta `paper/` em formato PDF:
-*   👉 **[Acesse o PDF do Artigo](paper/artigo_grokking.pdf)**
-
-Se você achar este material útil para suas aulas, estudos ou pesquisas, sinta-se à vontade para citar nosso trabalho:
-
-```bibtex
-@article{sansao2026grokking,
-  title={A Física Estatística do Grokking: Uma Abordagem Pedagógica do Aprendizado de Máquina},
-  author={Sansão, João Pedro Hallack},
-  journal={Revista Brasileira de Ensino de Física},
-  year={2026},
-  volume={48},
-  pages={e20250183},
-  url={https://github.com/jsansao/grokking}
-}
-```
 
 ---
 
