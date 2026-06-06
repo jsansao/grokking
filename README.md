@@ -1,6 +1,6 @@
-# A Física Estatística do *Grokking*: Uma Abordagem Pedagógica do Aprendizado de Máquina
+# *Grokking* e Transições de Fase: Uma abordagem pedagógica da Física Estatística do Aprendizado de Máquina
 
-Este repositório contém os códigos-fonte, simulações e o manuscrito científico associados ao artigo **"A Física Estatística do *Grokking*: Uma Abordagem Pedagógica do Aprendizado de Máquina"**. 
+Este repositório contém os códigos-fonte, simulações e o manuscrito científico associados ao artigo **"*Grokking* e Transições de Fase: Uma abordagem pedagógica da Física Estatística do Aprendizado de Máquina"**. 
 
 O objetivo deste projeto é fornecer um material didático e reprodutível que ilustra o fenômeno de ***grokking*** (generalização tardia e abrupta em redes neurais) sob a perspectiva da Física Estatística e da Termodinâmica de sistemas desordenados, conectando conceitos de Deep Learning a fenômenos como transições de fase de primeira ordem, energia livre de Helmholtz, entropia e quebra espontânea de simetria.
 
